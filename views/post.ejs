@@ -1,5 +1,9 @@
 <%- include('partials/header') %>
 <h1><%= postTitle%> </h1>
-<p> <%= postContent %></p>
+<p style="white-space: pre-line"> <%= postContent %></p>
 
-<%- include('partials/footer') %> 
+<form action="/delete" method="POST">
+    <button class="btn btn-danger" type="submit">delete</button>
+</form>
+
+<%- include('partials/footer') %>
